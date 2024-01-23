@@ -1,0 +1,68 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.feedback {
+    text-align: center;
+    background-color: #3498db;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    position: relative;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hidden-message {
+    display: none;
+    color: #fff;
+    margin-top: 20px;
+    position: absolute;
+    bottom: -40px; /* Sesuaikan dengan kebutuhan Anda */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.ngk, .ya {
+    background-color: #fff;
+    color: #3498db;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    outline: none;
+}
+
+.ngk:hover, .ya:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.ngk:hover::before   {
+    content: "👎 ";
+}
+
+.ngk::before, .ya::before {
+    content: "👍 ";
+    margin-right: 5px;
+}
